@@ -1,0 +1,30 @@
+header{    
+    padding: 40px 4%;    
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo img{
+    width: 30%;
+} 
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header nav ul li a{
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+header nav ul li:hover a, 
+header nav ul li.active a{
+    color: var(--destaque-color);
+}

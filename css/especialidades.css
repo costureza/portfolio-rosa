@@ -1,0 +1,54 @@
+section.especialidades{
+    padding: 40px 4%; 
+}
+section.especialidades .flex{
+    gap:60px;
+}
+
+.especialidades h2{
+    text-transform: capitalize;
+    font-family: var(--title-font);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.especialidades h2 span{   
+    font-family: var(--title-font);   
+    color: var(--destaque-color); 
+    
+}
+.especialidades .especial-box .especial-dados {
+    padding: 40px;
+}
+
+.especial-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+.especialidades .especial-box .especial-dados{    
+    margin-top: 45px; 
+    padding: 40px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidades .especial-box .especial-dados:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px var(--light-cor-geral);
+}
+.especialidades .especial-box .especial-dados{
+    padding: 40px;
+}
+.especialidades .especial-box .especial-dados i{
+    font-size: 4rem;
+    color: var(--destaque-color);
+}
+.especialidades .especial-box .especial-dados h3{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+.especialidades .especial-box .especial-dados p{
+    font-size: 1.5rem;
+    line-height: -10px;
+    text-align: justify;
+}

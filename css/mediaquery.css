@@ -1,0 +1,65 @@
+@media screen and (max-width:1020px) {
+    .navbar{
+        display: none;
+    }  
+    #contato{
+        display: none;
+    } 
+    .btn-abrir-menu {
+        display: block; 
+    }
+    .logo{
+        width: 50px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .home .flex {
+        flex-direction: column-reverse;
+    }
+    .home h1{
+        font-size: 32px;
+    }
+    .home{
+        padding: 20px 8%;
+    }
+    section.home .flex{
+        gap: 40px;
+    }
+    section.especialidades{
+        padding: 40px 8%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h2 span{
+        font-size: 30px;
+    }
+    section.sobre{
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre{
+        font-size: 34px;
+    }
+    .img-sobre img{
+        width: 100%;
+    }
+    section.portfolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portfolio .flex{
+        gap: 60px;
+    }
+    footer.flex{
+        flex-direction: column;
+    }
+    footer.line-footer{
+        text-align: center;
+    }
+}
+

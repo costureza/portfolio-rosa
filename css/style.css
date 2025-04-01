@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Markazi+Text:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+    font-family: var(--geral-font);
+    color: var(--cor-geral);  
+}
+
+
+:root{
+    --title-font: "Edu VIC WA NT Beginner", cursive;
+    --geral-font:"Markazi Text", serif;
+    --destaque-color:#f10635;
+    --cor-geral: #fff;
+    --light-cor-geral:#5c5c5c;
+    --bg-color:#1f242d;    
+    --rotate: rotateglow 4s linear infinite;
+    --show-bars: show-bars .5s ease-in-out forwards;
+    --show-content:show-content 1.5s linear forwards;
+    --display-text:display-text 16s linear infinite;
+    --preencha-texto: fill-text 4s linear infinite;
+    --rotate-border: rotate-border 10s linear infinite;
+    }
+    
+
+
+body{      
+    background: var(--bg-color);  
+}
+.btn-abrir-menu {
+    display: none; 
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+.flex{
+    display: flex;
+}
+
+a{
+    color: var(--cor-geral);
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: var(--destaque-color);
+    color: var(--cor-geral);
+    font-family: var(--geral-font);
+    border-radius: 8rem;
+    cursor: pointer;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #fdacbc;
+    transition: .2s;
+}
+
+
+@keyframes rotateglow{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-border{    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes show-bars{
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes show-content{
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes display-text {
+    25%, 100%{
+        display: none;
+    }
+}
+@keyframes fill-text{
+    10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+

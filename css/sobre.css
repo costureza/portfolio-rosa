@@ -1,0 +1,95 @@
+section.sobre{
+    padding: 40px 4%;    
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+.sobre .box-container .box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.sobre .box-container .box .img-sobre{
+    height:35rem;       
+    overflow: hidden;
+}
+.sobre .box-container .box .img-sobre img{    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sobre .box:hover .img-sobre img{
+    transform: scale(1.1);
+}
+.sobre .box-container .box .btn-social{
+    background-color: rgba(0,0,0,.6);
+    backdrop-filter: blur(2rem);
+    position: absolute;
+    top: 0;
+    right: -10rem;
+    width: 6rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 1.5rem;
+    z-index: 1; 
+}
+
+.sobre .box-container .box .btn-social .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid var(--destaque-color);
+    border-radius: 50%;
+    font-size: 1rem;
+    color: var(--destaque-color);
+    margin: 0 8px;
+    transition: .5s;
+    
+}
+
+
+.sobre .btn-sci .sci a:hover {
+    background: var(--destaque-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--destaque-color);
+}
+.sobre .box-container .box:hover .btn-social {
+    right: -1rem;
+}
+.sobre .box-container .box .btn-social .sci a{
+    font-size: 2.5rem;    
+    margin: 1rem 0;
+}
+.sobre .box-container .box .btn-social a:hover{
+    color: var(--destaque-color);
+}
+
+.sobre .txt-sobre .logo{
+    width: 140px;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 4rem;
+    text-transform: uppercase;    
+    margin-bottom: 30px;
+    font-family: var(--title-font);
+}
+.sobre .txt-sobre h2 span{
+    color: var(--destaque-color);
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 1.8rem;
+}
